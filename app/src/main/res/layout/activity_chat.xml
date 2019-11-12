@@ -5,70 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ChatActivity">
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_chatStar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/iv_star_1"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_star_gray_24dp" />
-
-            <ImageView
-                android:id="@+id/iv_star_2"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_star_1"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_star_gray_24dp" />
-
-            <ImageView
-                android:id="@+id/iv_star_3"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_star_2"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_star_gray_24dp" />
-
-            <ImageView
-                android:id="@+id/iv_star_4"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_star_3"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_star_gray_24dp" />
-
-            <ImageView
-                android:id="@+id/iv_star_5"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_star_4"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_star_gray_24dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_chatInput"
+        android:id="@+id/cv_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,91 +18,87 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/et_chatDes"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:ems="10"
-                android:hint="Description"
-                android:inputType="textPersonName"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/ib_chatSend"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <EditText
-                android:id="@+id/et_chatAddress"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
-                android:ems="10"
-                android:hint="Address"
-                android:inputType="textPersonName"
-                app:layout_constraintBottom_toTopOf="@+id/et_chatDes"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <EditText
-                android:id="@+id/et_chatHashtag"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
-                android:ems="10"
-                android:hint="Hashtag"
-                android:inputType="textPersonName"
-                app:layout_constraintBottom_toTopOf="@+id/et_chatAddress"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
             <ImageButton
-                android:id="@+id/ib_chatSend"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginEnd="8dp"
+                android:id="@+id/ib_close_form"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:background="@color/transparent"
-                app:layout_constraintBottom_toBottomOf="@+id/et_chatDes"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/et_chatDes"
-                app:srcCompat="@drawable/ic_send" />
+                app:srcCompat="@drawable/ic_keyboard_arrow_down"
+                tools:ignore="MissingConstraints,VectorDrawableCompat"
+                tools:layout_editor_absoluteY="3dp" />
 
-            <ImageView
-                android:id="@+id/iv_chatFood1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/et_chatHashtag"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ib_close_form"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/iv_chatFood2"
-                app:srcCompat="@drawable/pengsoo" />
+                app:layout_constraintTop_toTopOf="@+id/ib_close_form" />
 
-            <ImageView
-                android:id="@+id/iv_chatFood2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/et_hashtag"
-                app:layout_constraintEnd_toStartOf="@+id/iv_chatFood3"
-                app:layout_constraintStart_toEndOf="@+id/iv_chatFood1"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/pengsoo" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar">
 
-            <ImageView
-                android:id="@+id/iv_chatFood3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/et_chatHashtag"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/iv_chatFood2"
-                app:srcCompat="@drawable/pengsoo" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
+                    <EditText
+                        android:id="@+id/et_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:ems="10"
+                        android:hint="Description"
+                        android:inputType="textPersonName"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toStartOf="@+id/ib_send"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ib_send" />
+
+                    <ImageButton
+                        android:id="@+id/ib_send"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/transparent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ib_add_pic"
+                        app:srcCompat="@drawable/ic_send"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ImageButton
+                        android:id="@+id/ib_add_pic"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/transparent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@android:drawable/ic_menu_add" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcv_pic"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ib_add_pic"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ib_add_pic"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

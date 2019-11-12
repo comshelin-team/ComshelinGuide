@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tabLayout = findViewById(R.id.tabLayout);
-        viewPager = findViewById(R.id.viewPager);
+        viewPager = findViewById(R.id.vp_main);
         floatingSearchView = findViewById(R.id.floatingSearchView);
         floatingActionButton = findViewById(R.id.floatingActionButton);
 

@@ -22,29 +22,29 @@
             android:id="@+id/list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="목록" />
+            android:text="뭐먹징" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="지도" />
+            android:text="어디가징" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/recipe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="레시피" />
+            android:text="내가 요리사" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/my"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My" />
+            android:text="MY컴슐렝" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
+        android:id="@+id/vp_main"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/tabLayout"
