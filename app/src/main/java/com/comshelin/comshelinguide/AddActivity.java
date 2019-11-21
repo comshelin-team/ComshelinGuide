@@ -55,6 +55,7 @@ public class AddActivity extends AppCompatActivity {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
                 cv_form.setVisibility(View.VISIBLE);
+                ib_close_form.setVisibility(View.VISIBLE);
             }
         });
     }
