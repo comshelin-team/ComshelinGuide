@@ -1,8 +1,10 @@
-package com.comshelin.comshelinguide;
+package com.comshelin.comshelinguide.ui.recipe_info;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.comshelin.comshelinguide.R;
 
 public class RecipeInfoActivity extends AppCompatActivity {
 

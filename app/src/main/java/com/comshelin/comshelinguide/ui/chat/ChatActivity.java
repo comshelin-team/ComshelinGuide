@@ -1,4 +1,4 @@
-package com.comshelin.comshelinguide;
+package com.comshelin.comshelinguide.ui.chat;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RatingBar;
+
+import com.comshelin.comshelinguide.R;
 
 public class ChatActivity extends AppCompatActivity {
     ActionBar actionBar;

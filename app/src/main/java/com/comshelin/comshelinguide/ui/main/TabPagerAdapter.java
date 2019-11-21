@@ -1,4 +1,4 @@
-package com.comshelin.comshelinguide;
+package com.comshelin.comshelinguide.ui.main;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

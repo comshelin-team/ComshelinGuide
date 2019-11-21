@@ -1,4 +1,4 @@
-package com.comshelin.comshelinguide;
+package com.comshelin.comshelinguide.ui.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,9 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class ListFragment extends Fragment {
+import com.comshelin.comshelinguide.R;
 
-
+public class RecipeFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,6 @@ public class ListFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_list, null);
+        return inflater.inflate(R.layout.fragment_recipe, null);
     }
 }

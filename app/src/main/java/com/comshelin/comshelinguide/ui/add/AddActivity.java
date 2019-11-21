@@ -1,15 +1,15 @@
-package com.comshelin.comshelinguide;
+package com.comshelin.comshelinguide.ui.add;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RatingBar;
+
+import com.comshelin.comshelinguide.R;
 
 public class AddActivity extends AppCompatActivity {
     ActionBar actionBar;

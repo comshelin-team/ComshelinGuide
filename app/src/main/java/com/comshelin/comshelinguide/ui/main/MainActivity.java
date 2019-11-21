@@ -1,4 +1,4 @@
-package com.comshelin.comshelinguide;
+package com.comshelin.comshelinguide.ui.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.arlib.floatingsearchview.FloatingSearchView;
+import com.comshelin.comshelinguide.ui.add.AddActivity;
+import com.comshelin.comshelinguide.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
