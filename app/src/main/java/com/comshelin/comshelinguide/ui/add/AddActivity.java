@@ -61,6 +61,16 @@ public class AddActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        if(cv_form.getVisibility() == View.VISIBLE) {
+            cv_form.setVisibility(View.GONE);
+            ib_close_form.setVisibility(View.GONE);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
